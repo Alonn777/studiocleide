@@ -1,4 +1,36 @@
+# robots.txt para studiocleide.com.br
+
+# Permitir acesso a todos os bots de busca
 User-agent: *
 Allow: /
 
+# Permitir acesso específico aos assets importantes
+Allow: /src/assets/
+Allow: /src/css/
+Allow: /src/js/
+
+# Bloquear arquivos desnecessários para indexação
+Disallow: /src/assets/*.tmp
+Disallow: /src/assets/*.bak
+Disallow: /src/assets/*~
+Disallow: /.htaccess
+Disallow: /readme.html
+Disallow: /license.txt
+
+# Permitir imagens importantes para SEO
+Allow: /src/assets/logostudio.png
+Allow: /src/assets/Img-Sobre.jpg
+Allow: /src/assets/Galeria*.png
+Allow: /src/assets/Labios-Sombrancelha.png
+Allow: /src/assets/img-0101010.jpg
+Allow: /src/assets/cilios.png
+Allow: /src/assets/unhas.png
+Allow: /src/assets/Brow*Lamitation.png
+Allow: /src/assets/Cabelos.png
+Allow: /src/assets/sinais.jpg
+
+# Localização do sitemap
 Sitemap: https://studiocleide.com.br/sitemap.xml
+
+# Crawl-delay para evitar sobrecarga (opcional)
+# Crawl-delay: 1
